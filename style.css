@@ -1,0 +1,73 @@
+body {
+
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(background.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.calc-wrapper .digits-buttons {
+    margin-top: 10px;
+}
+.calc-wrapper .digits-buttons .digit-button  {
+    width: 40px;
+    height: 35px;
+    font-size: 20px;
+    background-color: #e6e6e6;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.82);
+    cursor: pointer;
+	outline: none;    
+}
+.calc-wrapper .operator-buttons .operator-button {
+    width: 35px;
+    height: 30px;
+    margin-top: 5px;
+}
+.operator-button{
+	width: 40px;
+	height: 35px;
+	background-color: #483D8B;
+	font-size: 20px;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	border: 2px solid rgba(0,0,0);
+	border-radius: 10px;
+}
+.calc-wrapper .digits, .calc-wrapper .operator-buttons {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+input{
+	border-radius: 5px/5px;
+}
+form{
+	margin-bottom: 5px;
+}
+.result{
+	font-size: 20px;
+	height: 20px;
+	width:170px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.82);
+}
+.ce-button{
+	width: 40px;
+	height: 35px;
+	background-color: #b3b3b3;
+	font-size: 20px;
+	cursor: pointer;
+	outline: none;
+}
+body{
+	user-select: none;
+}
+.calc-wrapper{
+	width:180px;
+	border-radius: 5px/5px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,1);
+	background-color: rgb(219, 219, 219);
+}

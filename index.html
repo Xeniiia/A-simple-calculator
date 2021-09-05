@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+        <div class="calc-wrapper">
+        <div class="result-area">
+            <form name="form">
+                <input id="result" type="text" name="pole" readonly>
+                <input class="ce-button" type="button" value="CE" onclick="clean()">
+            </form>
+        </div>
+        
+        <div class="digits">
+            <div class="digits-buttons">
+                <input class="digit-button" type="button" value="1" onclick="insert('1')">
+                <input class="digit-button" type="button" value="2" onclick="insert('2')">
+                <input class="digit-button" type="button" value="3" onclick="insert('3')">    
+                <input type="button" class="operator-button" value="+" onclick="insert('+')">
+            </div>
+            <div class="digits-buttons">
+                <input class="digit-button" type="button" value="4" onclick="insert('4')">
+                <input class="digit-button" type="button" value="5" onclick="insert('5')">
+                <input class="digit-button" type="button" value="6" onclick="insert('6')">
+                <input type="button" class="operator-button" value="-" onclick="insert('-')">
+            </div>
+            <div class="digits-buttons">
+                <input class="digit-button" type="button" value="7" onclick="insert('7')">
+                <input class="digit-button" type="button" value="8" onclick="insert('8')">
+                <input class="digit-button" type="button" value="9" onclick="insert('9')">  
+                 <input type="button" class="operator-button" value="&divide" onclick="insert('/')"> 
+            </div>
+            <div class="digits-buttons">
+                <input type="button" class="operator-button" value="." onclick="insert('.')">
+                <input class="digit-button" type="button" value="0" onclick="insert('0')">
+                <input type="button" class="digit-button" value="=" onclick="equal()">
+                <input type="button" class="operator-button" value="&times" onclick="insert('*')">
+            </div>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
